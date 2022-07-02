@@ -13,3 +13,6 @@ keystone.db
 # Documentation here: https://yarnpkg.com/features/zero-installs
 !.yarn/cache
 #.pnp.*
+
+notes.txt
+.data
