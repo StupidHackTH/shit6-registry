@@ -36,6 +36,7 @@ model Project {
   safe            Boolean @default(true)
   author          User?   @relation("Project_author", fields: [authorId], references: [id])
   authorId        String? @map("author")
+  urls            String  @default("")
   video           String  @default("")
 
   @@index([authorId])

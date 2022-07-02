@@ -141,6 +141,7 @@ type Project {
   image: ImageFieldOutput
   safe: Boolean
   author: User
+  urls: String
   video: String
 }
 
@@ -179,6 +180,7 @@ input ProjectWhereInput {
   title: StringFilter
   safe: BooleanFilter
   author: UserWhereInput
+  urls: StringFilter
   video: StringFilter
 }
 
@@ -200,6 +202,7 @@ input ProjectOrderByInput {
   teamMembers: OrderDirection
   title: OrderDirection
   safe: OrderDirection
+  urls: OrderDirection
   video: OrderDirection
 }
 
@@ -212,6 +215,7 @@ input ProjectUpdateInput {
   image: ImageFieldInput
   safe: Boolean
   author: UserRelateToOneForUpdateInput
+  urls: String
   video: String
 }
 
@@ -244,6 +248,7 @@ input ProjectCreateInput {
   image: ImageFieldInput
   safe: Boolean
   author: UserRelateToOneForCreateInput
+  urls: String
   video: String
 }
 

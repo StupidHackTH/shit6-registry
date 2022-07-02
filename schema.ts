@@ -98,7 +98,9 @@ export const lists: Lists = {
       teamMembers: text({
         defaultValue: "",
         ui: {
-          description: "Please list the team members",
+          description:
+            "Please list the team members. This will be displayed on the website. Feel free to include URL. Example: Name1 (github.com/username1)",
+          displayMode: "textarea",
         },
       }),
       title: text({
@@ -130,6 +132,13 @@ export const lists: Lists = {
       }),
       author: relationship({
         ref: "User.projects",
+      }),
+      urls: text({
+        label: "URLs",
+        ui: {
+          displayMode: "textarea",
+          description: "GitHub, Demo URL, etc.",
+        },
       }),
       video: text({
         label: "YouTube Video (if submitting remotely)",
